@@ -29,7 +29,7 @@ services:
       - TZ=Asia/Seoul
     volumes:
       - docker-data:/opt/oracle/oradata
-      - ./script.sql:/container-entrypoint-initdb.d
+      - ./script:/container-entrypoint-initdb.d
     restart: unless-stopped
     networks:
       - team-network
