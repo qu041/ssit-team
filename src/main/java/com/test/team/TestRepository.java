@@ -8,9 +8,9 @@ public class TestRepository {
 		public Integer num() {
 			
 			//올바른 결과 : 100
-			//return 100;
+			return 100;
 			//실패 결과: 200
-			return 200;
+			//return 200;
 			
 		}
 
