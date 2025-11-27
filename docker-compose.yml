@@ -5,9 +5,9 @@ services:
     ports:
       - "8080:8888"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle:1521/XEPDB1
-      - SPRING_DATASOURCE_USERNAME=springboot
-      - SPRING_DATASOURCE_PASSWORD=java1234
+      - SPRING_DATASOURCE_URL=${DB_URL}
+      - SPRING_DATASOURCE_USERNAME=${DB_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${DB_PASSWORD}
     depends_on:
       - oracle
     restart: unless-stopped
